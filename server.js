@@ -29,6 +29,7 @@ namespaceReq.on('connection', socket => {
   })
   socket.on('res', msg => {
     tmp[msg.key].res.send(msg.res)
+    delete msg.key
   })
 })
 app.use(bodyParser.text({ type: 'text/html' }))
