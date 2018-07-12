@@ -98,7 +98,7 @@ const tmpXml = `<RESPONSE>
   <HEADER>
     <CLIENT_ID>{clientId}</CLIENT_ID>
     <USER_ID>{userId}</USER_ID>
-    <VERSION_NO>2.0</VERSION_NO>
+    <VERSION_NO>3.0</VERSION_NO>
     <RUN_NO>{runNo}</RUN_NO>
     <TOT_ITEMS>1</TOT_ITEMS>
     <ERR_ITEMS>0</ERR_ITEMS>
@@ -609,6 +609,68 @@ const tmpXml = `<RESPONSE>
             <EXEMPTED_OSB>0.00</EXEMPTED_OSB>
           </AGGREGATE_OS_BAL>
         </AGGOSBALANCES>
+        <MIBALANCES>
+          <AGGREGATE_MIB_BAL>
+            <MIB_MONTH>04</MIB_MONTH>
+            <MIB_YEAR>2018</MIB_YEAR>
+            <PROP_JNT_MIB/>
+            <PROP_SGLE_MIB/>
+            <NON_PROP_SEC_JNT_MIB/>
+            <NON_PROP_SEC_SGLE_MIB/>
+            <UNSECURED_MIB/>
+            <EXEMPTED_UNSEC_MIB/>
+          </AGGREGATE_MIB_BAL>
+          <AGGREGATE_MIB_BAL>
+            <MIB_MONTH>03</MIB_MONTH>
+            <MIB_YEAR>2018</MIB_YEAR>
+            <PROP_JNT_MIB/>
+            <PROP_SGLE_MIB/>
+            <NON_PROP_SEC_JNT_MIB/>
+            <NON_PROP_SEC_SGLE_MIB/>
+            <UNSECURED_MIB/>
+            <EXEMPTED_UNSEC_MIB/>
+          </AGGREGATE_MIB_BAL>
+          <AGGREGATE_MIB_BAL>
+            <MIB_MONTH>02</MIB_MONTH>
+            <MIB_YEAR>2018</MIB_YEAR>
+            <PROP_JNT_MIB/>
+            <PROP_SGLE_MIB/>
+            <NON_PROP_SEC_JNT_MIB/>
+            <NON_PROP_SEC_SGLE_MIB/>
+            <UNSECURED_MIB/>
+            <EXEMPTED_UNSEC_MIB/>
+          </AGGREGATE_MIB_BAL>
+          <AGGREGATE_MIB_BAL>
+            <MIB_MONTH>01</MIB_MONTH>
+            <MIB_YEAR>2018</MIB_YEAR>
+            <PROP_JNT_MIB/>
+            <PROP_SGLE_MIB/>
+            <NON_PROP_SEC_JNT_MIB/>
+            <NON_PROP_SEC_SGLE_MIB/>
+            <UNSECURED_MIB/>
+            <EXEMPTED_UNSEC_MIB/>
+          </AGGREGATE_MIB_BAL>
+          <AGGREGATE_MIB_BAL>
+            <MIB_MONTH>12</MIB_MONTH>
+            <MIB_YEAR>2017</MIB_YEAR>
+            <PROP_JNT_MIB/>
+            <PROP_SGLE_MIB/>
+            <NON_PROP_SEC_JNT_MIB/>
+            <NON_PROP_SEC_SGLE_MIB/>
+            <UNSECURED_MIB/>
+            <EXEMPTED_UNSEC_MIB/>
+          </AGGREGATE_MIB_BAL>
+          <AGGREGATE_MIB_BAL>
+            <MIB_MONTH>11</MIB_MONTH>
+            <MIB_YEAR>2017</MIB_YEAR>
+            <PROP_JNT_MIB/>
+            <PROP_SGLE_MIB/>
+            <NON_PROP_SEC_JNT_MIB/>
+            <NON_PROP_SEC_SGLE_MIB/>
+            <UNSECURED_MIB/>
+            <EXEMPTED_UNSEC_MIB/>
+          </AGGREGATE_MIB_BAL>
+        </MIBALANCES>
       </CONSUMER_OUT>
       <DISCLAIMER>
         <![CDATA[This information has been collated from various sources and does not represent the opinion of Infocredit D&B(Singapore) Pte Ltd. No liability (in tort contract or Otherwise howsoever) attaches to us with respect to the collation or supplying of the information or any use made of it and whether in relation to its accuracy or completeness or any other matter whatsoever. The information is supplied on a confidential basis to you and not for the use of any other party save of any person on whose behalf you have sought the information. We are entitled to indemnity from you against any claims or loss made or sustained in consequence of the provision of the information sought.]]>

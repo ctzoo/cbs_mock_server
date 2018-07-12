@@ -69,6 +69,9 @@ app.post(
       addressType: ss('CADR/CADT', cbsConsumer),
       addressFormat: ss('CADR/CADF', cbsConsumer),
       postalCode: ss('CADR/CAD7', cbsConsumer),
+      streetName: ss('CADR/CAD4', cbsConsumer),
+      stateCityName: ss('CADR/CAD8', cbsConsumer),
+      countryCode: ss('CADR/CAD9', cbsConsumer),
     }
     tmp[cbsReq.runNo] = { req: cbsReq, res }
     evt.emit('req', { key: cbsReq.runNo, req: cbsReq })
