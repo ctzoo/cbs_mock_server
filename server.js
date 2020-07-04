@@ -35,7 +35,7 @@ namespaceReq.on('connection', socket => {
 app.use(bodyParser.text({ type: 'text/html' }))
 
 const s = (p, n) => xpath.select1(p, n)
-const ss = (p, n) => xpath.select1(p, n).textContent
+const ss = (p, n) => xpath.select1(p, n) ? xpath.select1(p, n).textContent : undefined
 
 app.use(express.static('./'))
 app.post(
@@ -72,10 +72,14 @@ app.post(
       streetName: ss('CADR/CAD4', cbsConsumer),
       stateCityName: ss('CADR/CAD8', cbsConsumer),
       countryCode: ss('CADR/CAD9', cbsConsumer),
+      blkHseBldgNumber: ss('CADR/CAD1', cbsConsumer),
+      storeyNumber: ss('CADR/CAD2', cbsConsumer),
+      unitNumber: ss('CADR/CAD3', cbsConsumer),
+      buildingName: ss('CADR/CAD5', cbsConsumer),
     }
     tmp[cbsReq.runNo] = { req: cbsReq, res }
     evt.emit('req', { key: cbsReq.runNo, req: cbsReq })
   }
 )
 
-httpServer.listen(3001, () => {})
+httpServer.listen(3001, () => { })
